@@ -106,3 +106,19 @@ footer .container-fluid .col-md-2 p:first-child {
   font-weight: bold;
 }
 /* fine footer */
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .wrapper, .wrapper_80 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  /* service */
+.service .container-fluid .regions {
+  text-align: center;
+}
+  /* service */
