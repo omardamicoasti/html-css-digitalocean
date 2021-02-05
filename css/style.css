@@ -86,10 +86,23 @@ header li {
 }
 /* fine jumbotron */
 /* inizio main */
-/* inizio partner */
 
-/* finepartner */
-
-
-
+/* service */
+.singolariga > div {
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+.singolariga > div:last-child {
+  text-align: right;
+}
+/* fine service */
 /* fine main */
+
+/* footer */
+footer p {
+  font-size: 0.8em;
+}
+footer .container-fluid .col-md-2 p:first-child {
+  font-weight: bold;
+}
+/* fine footer */
