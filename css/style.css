@@ -17,21 +17,21 @@
 .padding_bottom_small {
   padding-bottom: 15px;
 }
-.bg_green {
-  background-color: #24be9e;
-}
-.bg_lightblue {
-  background-color: #1b83c1;
+.bg_grey {
+  background-color: rgb(237, 237, 237);
 }
 .bg_blue {
-  background-color: #445365;
+  background-color: royalblue;
+}
+.bg_navy {
+  background-color: navy;
 }
 .wrapper {
   width: 50%;
   margin: 0 auto;
 }
-.wrapper_70 {
-  width: 70%;
+.wrapper_80 {
+  width: 80%;
   margin: 0 auto;
 }
 .text_white {
@@ -55,4 +55,41 @@
 .quadruple {
   font-size: 4em;
 }
+button {
+  transform: translateY(-25%);
+}
 /* fine regole generali per la pagina*/
+/* header */
+.header_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+}
+header li {
+  text-transform: capitalize;
+}
+.collapse .nav #bottone {
+  color: royalblue;
+  border: 1px solid royalblue;
+  background-color: rgb(237, 237, 237);
+}
+.collapse .navbar_left {
+  margin-left: 10%;
+}
+/* header-top */
+/* jumbotron */
+.jumbo_tron {
+  background-color: royalblue;
+  margin-top: 65px;
+}
+/* fine jumbotron */
+/* inizio main */
+/* inizio partner */
+
+/* finepartner */
+
+
+
+/* fine main */
