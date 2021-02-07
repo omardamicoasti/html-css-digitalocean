@@ -17,6 +17,15 @@
 .padding_bottom_small {
   padding-bottom: 15px;
 }
+.padding_allaround_small {
+  padding: 15px 15px 15px 15px;
+}
+.padding_allaround_standard {
+  padding: 30px 30px 30px 30px;
+}
+.bg_white {
+  background-color: white;
+}
 .bg_grey {
   background-color: rgb(237, 237, 237);
 }
@@ -37,11 +46,20 @@
 .text_white {
   color: white;
 }
+.text_blue {
+  color: royalblue;
+}
+.text_grey {
+  color: grey;
+}
 .bold {
   font-weight: bold;
 }
 .half {
   font-size: 0.5em;
+}
+.zeroeight {
+  font-size: 0.8em;
 }
 .one_point_five {
   font-size: 1.5em;
@@ -67,6 +85,10 @@ button {
   z-index: 3;
   width: 100%;
 }
+.header_top img {
+  width: 10%;
+  transform: translateY(160%);
+}
 header li {
   text-transform: capitalize;
 }
@@ -81,12 +103,36 @@ header li {
 /* header-top */
 /* jumbotron */
 .jumbo_tron {
-  background-color: royalblue;
+  background-image: url(../img/bg_jumbotron.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
   margin-top: 65px;
+}
+.google_sign_up {
+  border-radius: 10px;
+}
+.bottoni img {
+  width: 5%;
 }
 /* fine jumbotron */
 /* inizio main */
-
+/* partner */
+.partner .wrapper_80 .container-fluid .row .partners div img {
+  background-color: rgb(237, 237, 237);
+}
+/* partner */
+/* deploy */
+.deploy ul li {
+  padding-bottom: 15px;
+}
+.deploy ul li a, .deploy h4, .deploy p {
+  color: grey;
+  text-decoration: none;
+}
+.deploy .deploy_menu {
+  border-left: 1px solid lightgrey;
+}
 /* service */
 .singolariga > div {
   display: inline-block;
