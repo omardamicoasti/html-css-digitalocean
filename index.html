@@ -23,10 +23,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">digital ocean</a>
-                  <!-- <img src="img\logo-small-new.svg" alt="digitaloceanlogo"> -->
+                  <a class="navbar-brand" href="#"><img src="img\logo.png" alt="digitaloceanlogo" id="logo_digitalocean"></a>
+
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse padding_top_extrasmall" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar_left">
                     <li><a href="#">products <span class="caret"></span></a></li>
                     <li><a href="#">customers</a></li>
@@ -39,7 +39,7 @@
                     <li><a href="#">support<span class="caret"></span></a></li>
                     <li><a href="#">login</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#"><button type="button" class="btn btn-default" id="bottone">sign up</button></a></li>
+                    <li><a href="#"><button type="button" class="btn btn-default" id="bottone">Sign up</button></a></li>
                   </ul>
                 </div>
               </div>
@@ -51,8 +51,8 @@
         <div class="jumbo_tron padding_top_standard padding_bottom_standard">
           <div class="wrapper_80">
             <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-7 col-sm-7 col-xs-12 text_white">
+              <div class="row relative">
+                <div class="jumbo_text col-md-7 col-sm-7 col-xs-12 text_white ">
                   <h1 class="padding_bottom_standard quadruple bold">The simplest cloud platform for developers & teams</h1>
                   <h3>Deploy, manage, and scale cloud applications faster and more efficiently on Digital Ocean. We make managing infrastructure easy for teams and businessess, whether you're running one virtual machine o ten thousand.</h3>
                 </div>
@@ -73,7 +73,7 @@
                         <div class=" padding_top_standard">
                           <button type="button " class="btn btn-primary btn-lg btn-block">Create your account</button>
                         </div>
-                        <div class=" padding_top_small">
+                        <div class="relative padding_top_small">
                           <button type="button" class="btn btn-default btn-lg btn-block"><img src="img\google-icon.png" alt=""> Sign up with google</button>
                         </div>
                         <p class="zeroeight">By signing up you agree to the <a href="#">Terms of Service</a></p>
@@ -98,7 +98,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <h4 class="text-uppercase text_grey">innovative business trust digital ocean</h4>
                 </div>
-                <div class="partners bg_grey col-sm-12 padding_top_standard padding_bottom_standard">
+                <div class="partners col-sm-12 padding_top_standard padding_bottom_standard">
                   <div class="partner1 bg_grey col-md-2 col-sm-2 col-xs-6"><img src="img\logo_docker.svg" alt="dockers"> </div>
                   <div class="partner2 col-md-2 col-sm-2 col-xs-6"><img src="img\logo_gitlab.svg" alt="gitlab"> </div>
                   <div class="partner3 col-md-2 col-sm-2 col-xs-6"><img src="img\logo_slack.svg" alt="slack"> </div>
@@ -106,8 +106,8 @@
                   <div class="partner5 col-md-2 col-sm-2 col-xs-6"><img src="img\logo_hashicorp.svg" alt="hashicorp"> </div>
                   <div class="partner6 col-md-2 col-sm-2 col-xs-6"><img src="img\logo_splunk.svg" alt="splunk"> </div>
                 </div>
-                <div class="col-md-12 col-sm-12">
-                  <p><a href="#">View customer stories ></a></p>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <p id="vcs"><a href="#">View customer stories ></a></p>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@
         <div class="deploy padding_top_standard padding_bottom_standard">
           <div class="wrapper_80">
             <div class="container-fluid">
-              <div class="row">
+              <div class="row deploy_title">
                 <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                   <h2 class="bold">Deploy and scale seamlessly</h2>
                   <h4 class="padding_top_small padding_bottom_standard">Our optimized configuration process seves your team time when running and scaling distributed applications, Al & machine learning workloads, hosted services, client websites, or CI/CD enviroments.</h3>
@@ -133,18 +133,26 @@
                     <li><a href="#">monitor</a></li>
                   </ul>
                 </div>
-                <div class="col-md-10 col-sm-10">
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="segments col-md-10 col-sm-10 col-xs-12">
+                  <div class="col-md-6 col-sm-6">
+                    <img src="img\cluster-deploy.svg" alt="deploy">
+                    <h5>Cluster deployments</h4>
+                    <p>Provision multiple Droplets (virtual machines) in seconds without our control panel, CLI, or directly against our API.</p>
                   </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <div class="col-md-6 col-sm-6">
+                    <img src="img\optimized-compute.svg" alt="compute">
+                    <h5>Optimized compute types</h4>
+                    <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
                   </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <div class="col-md-6 col-sm-6">
+                    <img src="img\one-click.svg" alt=oneclick"">
+                    <h5>One-click apps</h4>
+                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                   </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <div class="col-md-6 col-sm-6">
+                    <img src="img\global.svg" alt="global">
+                    <h5>Global availability</h4>
+                    <p>Deploy to any of our data center regions around the world.</p>
                   </div>
                 </div>
               </div>
@@ -157,21 +165,21 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <h2>Designed</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h2 class="bold">Designed for developers</h2>
+                  <h4 class="text_grey padding_top_small padding_bottom_standard">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API</h4>
                 </div>
               </div>
-              <div class="row">
-                <div class="foto_designed padding_top_small padding_bottom_small">
-                  <div class="col-md-3 col-sm-3 text-right hidden-xs"> >>>>> </div>
-                  <div class="col-md-6 col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
-                  <div class="col-md-3 col-sm-3 text-left hidden-xs"> <<<<< </div>
+              <div class="row padding_top_small padding_bottom_small">
+                <div class="foto_designed">
+                  <div class="next_pic double col-md-3 col-sm-3 text-right hidden-xs"><a href="#"><i class="fas fa-angle-left"></i></a></div>
+                  <div class="col-md-6 col-sm-6"><img src="img/screenshot-createdroplet.jpg" alt="createdroplet"> </div>
+                  <div class="next_pic double col-md-3 col-sm-3 text-left hidden-xs"><a href="#"><i class="fas fa-angle-right"></i></a></div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row padding_top_small">
                 <div class="">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                  <p>pallini con font awesome</p>
+                  <p class="bold padding_top_small">Create compute servers in 55 second or less.</p>
+                  <p class="small_circles"><a href="#"><i class="far fa-circle"></i></a><a href="#"><i class="far fa-circle"></i></a><a href="#"><i class="far fa-circle"></i></a><a href="#"><i class="far fa-circle"></i></a></p>
                 </div>
               </div>
             </div>
@@ -183,38 +191,38 @@
             <div class="container-fluid">
               <div class="row text-center">
                 <div class="col-xs-12">
-                  <h2>Features</h2>
+                  <h2 class="bold">The features your business needs</h2>
                 </div>
               </div>
-              <div class="row padding_top_small ">
+              <div class="row padding_top_standard ">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <div class="">
-                    fotopiccola
+                    <img src="img/pred-pricing.svg" alt="pricing">
                   </div>
                   <div class="">
-                    <h4>Sottotitolo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#">scritta blu > </a>
+                    <h4>Predictable pricing</h4>
+                    <p>Leave the complex pricing strucures behind. Always know what you'll pay per month with a flat, industry-leading princing structure.</p>
+                    <a href="#">Pricing ></a>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <div class="">
-                    fotopiccola
+                    <img src="img/world-class.svg" alt="worldclass">
                   </div>
                   <div class="">
-                    <h4>Sottotitolo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#">scritta blu > </a>
+                    <h4>World-class service</h4>
+                    <p>Free round-the-clocl technical support for all customers. You'll feel the love.</p>
+                    <a href="#">Support ></a>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                   <div class="">
-                    fotopiccola
+                    <img src="img/reliable-platform.svg" alt="reliableplatform">
                   </div>
                   <div class="">
-                    <h4>Sottotitolo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#">scritta blu > </a>
+                    <h4>Reliable platform</h4>
+                    <p>More than 1000,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+                    <a href="#">Security ></a>
                   </div>
                 </div>
               </div>
@@ -227,73 +235,74 @@
             <div class="container-fluid">
               <div class="row text_white text-center">
                 <div class="col-xs-12">
-                  <h2>Service</h2>
+                  <h2 class="bold">Service your customers around the world from 12 regions.</h2>
                 </div>
               </div>
               <div class="row regions padding_top_small text_white">
                 <div class="col-md-6 col-sm-6">
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">AMS2</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Amsterdam, Netherland</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">AMS3</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Amsterdam, Netherland</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">BLR1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Bangalore, India</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">FRA1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Frankfurt, German</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">LON1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">London, UK</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">NYC1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">New York, USA</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">AMS2</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Amsterdam, Netherland</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">AMS3</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Amsterdam, Netherland</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">BLR1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Bangalore, India</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">FRA1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">Frankfurt, German</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">LON1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">London, UK</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
                   <div class="singolariga col-xs-12">
-                    <div class="col-md-3 col-sm-3">AMS2</div>
-                    <div class="col-md-6 col-sm-6">Amsterdam, Netherland</div>
-                    <div class="col-md-3 col-sm-3">Test speed</div>
+                    <div class="col-md-3 col-sm-3 col-xs-2">NYC1</div>
+                    <div class="col-md-6 col-sm-6 col-xs-7">New York, USA</div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><a href="#">Test speed ></a></div>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -305,21 +314,21 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-xs-12">
-                  <h2>Development</h2>
+                  <h2 class="bold">Development teams love DigitalOcean</h2>
                 </div>
               </div>
               <div class="row">
-                <div class="foto_development padding_top_small padding_bottom_small">
-                  <div class="col-md-3 col-sm-3 text-right hidden-xs"> >>>>> </div>
-                  <div class="col-md-6 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                  <div class="col-md-3 col-sm-3 text-left hidden-xs"> <<<<< </div>
+                <div class="row padding_top_small padding_bottom_small">
+                  <div class="foto_designed">
+                    <div class="next_pic double col-md-3 col-sm-3 text-right hidden-xs"><a href="#"><i class="fas fa-angle-left"></i></a></div>
+                    <div class="col-md-6 col-sm-6"><img src="img/rockerbox.PNG" alt="rockerbox"> </div>
+                    <div class="next_pic double col-md-3 col-sm-3 text-left hidden-xs"><a href="#"><i class="fas fa-angle-right"></i></a></div>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="">
-                  <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                  <p>pallini con font awesome</p>
-                </div>
+                <div class="row padding_top_small">
+                  <div>
+                      <p class="small_circles"></a><a href="#"><i class="far fa-circle"></i></a><a href="#"><i class="far fa-circle"></i></a><a href="#"><i class="far fa-circle"></i></a></p>
+                  </div>
               </div>
             </div>
           </div>
@@ -330,11 +339,11 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12"></div>
-                <h2>Get Started</h2>
+                <h2 class="bold">Get Started now.</h2>
               </div>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>BOTTONE</p>
+              <div class="row padding_top_small">
+                <div class="col-xs-12 get_started_button">
+                  <p><button type="button" class="btn btn-default">Create your account</button></p>
                 </div>
               </div>
             </div>
@@ -343,34 +352,60 @@
 
       </main>
 
-      <footer class="bg_navy text_white padding_top_standard padding_bottom_small">
+      <footer class="bg_navy padding_top_standard padding_bottom_small text-left">
         <div class="wrapper_80">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4 col-sm-12 col-xs-12">
-                <p>2018 copyright</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                <p>loghi social</p>
+                <p>© 2018 copyright DigitalOcean, LLC. All right reserved</p>
+                <p class="text_grey">Proudly made in NY</p>
+                <p class="one_point_five"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-square"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></p>
               </div>
               <div class="col-md-2 col-sm-6 col-xs-12">
                 <p>Company</p>
-                <p>About</p>
-                <p>Leadership</p>
+                <p><a href="#">about</a></p>
+                <p><a href="#">leadership</a></p>
+                <p><a href="#">link</a></p>
+                <p><a href="#">blog</a></p>
+                <p><a href="#">careers</a></p>
+                <p><a href="#">partner network</a></p>
+                <p><a href="#">referral program</a></p>
+                <p><a href="#">events</a></p>
+                <p><a href="#">press</a></p>
+                <p><a href="#">legal & security</a></p>
               </div>
               <div class="col-md-2 col-sm-6 col-xs-12">
-                <p>Company</p>
-                <p>About</p>
-                <p>Leadership</p>
+                <p>Products</p>
+                <p><a href="#">droplets</a></p>
+                <p><a href="#">spaces</a></p>
+                <p><a href="#">kubernetes</a></p>
+                <p><a href="#">load balancer</a></p>
+                <p><a href="#">block storage</a></p>
+                <p><a href="#">tools & integrations</a></p>
+                <p><a href="#">one-click apps</a></p>
+                <p><a href="#">API</a></p>
+                <p><a href="#">pricing</a></p>
+                <p><a href="#">documentation</a></p>
+                <p><a href="#">release notes</a></p>
               </div>
               <div class="col-md-2 col-sm-6 col-xs-12">
-                <p>Company</p>
-                <p>About</p>
-                <p>Leadership</p>
+                <p>Community</p>
+                <p><a href="#">tutorials</a></p>
+                <p><a href="#">mettups</a></p>
+                <p><a href="#">Q&A</a></p>
+                <p><a href="#">write for donations</a></p>
+                <p><a href="#">droplets for demos</a></p>
+                <p><a href="#">hatch</a></p>
+                <p><a href="#">shop swag</a></p>
+                <p><a href="#">research program</a></p>
+                <p><a href="#">currents research</a></p>
+                <p><a href="#">open source</a></p>
               </div>
               <div class="col-md-2 col-sm-6 col-xs-12">
-                <p>Company</p>
-                <p>About</p>
-                <p>Leadership</p>
+                <p>Support</p>
+                <p><a href="#">contact support</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">network status</a></p>
               </div>
             </div>
           </div>

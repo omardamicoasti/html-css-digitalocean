@@ -6,10 +6,16 @@
 
 /* regole generali per la pagina*/
 .padding_top_standard {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .padding_bottom_standard {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+}
+.padding_top_extrasmall {
+  padding-top: 8px;
+}
+.padding_bottom_extrasmall {
+  padding-bottom: 10px;
 }
 .padding_top_small {
   padding-top: 15px;
@@ -27,7 +33,7 @@
   background-color: white;
 }
 .bg_grey {
-  background-color: rgb(237, 237, 237);
+  background-color: #F8F8F8;
 }
 .bg_blue {
   background-color: royalblue;
@@ -73,11 +79,18 @@
 .quadruple {
   font-size: 4em;
 }
+.relative {
+  position: relative;
+}
+.vertical_middle {
+  vertical-align: middle;
+}
 button {
   transform: translateY(-25%);
 }
 /* fine regole generali per la pagina*/
 /* header */
+/* header-top */
 .header_top {
   position: fixed;
   top: 0;
@@ -85,9 +98,8 @@ button {
   z-index: 3;
   width: 100%;
 }
-.header_top img {
-  width: 10%;
-  transform: translateY(160%);
+#logo_digitalocean {
+  height: 30px;
 }
 header li {
   text-transform: capitalize;
@@ -95,12 +107,9 @@ header li {
 .collapse .nav #bottone {
   color: royalblue;
   border: 1px solid royalblue;
-  background-color: rgb(237, 237, 237);
+  background-color: #F8F8F8;
 }
-.collapse .navbar_left {
-  margin-left: 10%;
-}
-/* header-top */
+/* fine header-top */
 /* jumbotron */
 .jumbo_tron {
   background-image: url(../img/bg_jumbotron.svg);
@@ -109,17 +118,39 @@ header li {
   background-repeat: repeat-y;
   margin-top: 65px;
 }
+.jumbo_text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4,46,170,.2);
+  border-radius: 10px;
+}
 .google_sign_up {
   border-radius: 10px;
 }
 .bottoni img {
-  width: 5%;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
 }
 /* fine jumbotron */
 /* inizio main */
+.small_circles i {
+  margin-right: 10px;
+}
+.small_circles i:hover {
+  font-weight: bold;
+}
 /* partner */
 .partner .wrapper_80 .container-fluid .row .partners div img {
   background-color: rgb(237, 237, 237);
+}
+.partner .wrapper_80 .container-fluid .row p a {
+  text-decoration: none;
 }
 /* partner */
 /* deploy */
@@ -133,23 +164,74 @@ header li {
 .deploy .deploy_menu {
   border-left: 1px solid lightgrey;
 }
+.deploy h5 {
+  font-weight: bold;
+}
+.deploy .segments div {
+  padding-bottom: 30px;
+}
+/* designed */
+.designed img {
+  width: 100%;
+}
+.next_pic {
+  padding-top: 15%;
+}
+/* fine designed */
+/* features */
+.features .wrapper_80 .container-fluid .row a {
+  text-decoration: none;
+}
+.features .wrapper_80 .container-fluid .row h4 {
+  font-weight: bold;
+}
+/* fine features */
 /* service */
 .singolariga > div {
   display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.singolariga {
   border-bottom: 1px solid white;
 }
 .singolariga > div:last-child {
   text-align: right;
 }
+.service .wrapper_80 .container-fluid .row a {
+  text-decoration: none;
+  color: rgb(84, 219, 175);
+}
 /* fine service */
-/* fine main */
+/* development */
+.development img {
+  width: 60%;
+}
+/* fine development*/
+/* getstarted */
 
+/* fine getstarted */
+.getstarted .wrapper_80 .container-fluid .row .get_started_button p button {
+  color: royalblue;
+  font-weight: bold;
+}
+/* fine main */
 /* footer */
-footer p {
+footer .container-fluid p:first-child {
+  font-weight: bold;
+  color: white;
+}
+footer .container-fluid p {
+  text-transform: capitalize;
   font-size: 0.8em;
 }
-footer .container-fluid .col-md-2 p:first-child {
-  font-weight: bold;
+footer i {
+  margin-right: 20px;
+  color: lightgrey;
+}
+footer .wrapper_80 .container-fluid a {
+  text-decoration: none;
+  color: lightgrey;
 }
 /* fine footer */
 
@@ -168,3 +250,32 @@ footer .container-fluid .col-md-2 p:first-child {
   text-align: center;
 }
   /* service */
+
+@media screen and (max-width: 767px) {
+
+  .jumbo_text, .partner h4, .deploy_title {
+    margin-bottom: 40px;
+  }
+  #vcs, .features img {
+    margin-top: 40px;
+  }
+  .foto_designed {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .singolariga div:first-child {
+    text-align: left;
+  }
+  .service  .wrapper_80 .container-fluid .regions {
+    text-align: left;
+  }
+  .development img, .designed img {
+    width: 70%;
+  }
+
+
+
+
+
+
+}
