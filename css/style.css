@@ -170,6 +170,7 @@ header li {
 .deploy .segments div {
   padding-bottom: 30px;
 }
+
 /* designed */
 .designed img {
   width: 100%;
@@ -242,7 +243,7 @@ footer .wrapper_80 .container-fluid a {
 
 @media screen and (max-width: 991px) {
   .wrapper, .wrapper_80 {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
   /* service */
@@ -252,12 +253,18 @@ footer .wrapper_80 .container-fluid a {
   /* service */
 
 @media screen and (max-width: 767px) {
-
+  .jumbo_tron {
+    background-size: 1250px;
+    background-repeat: repeat;
+  }
   .jumbo_text, .partner h4, .deploy_title {
     margin-bottom: 40px;
   }
   #vcs, .features img {
     margin-top: 40px;
+  }
+  .partners div {
+    margin-bottom: 15px;
   }
   .foto_designed {
     margin-bottom: 100px;
@@ -272,10 +279,9 @@ footer .wrapper_80 .container-fluid a {
   .development img, .designed img {
     width: 70%;
   }
-
-
-
-
-
+  .deploy_menu {
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
 
 }
