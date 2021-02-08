@@ -85,7 +85,7 @@
 .vertical_middle {
   vertical-align: middle;
 }
-button {
+#bottone {
   transform: translateY(-25%);
 }
 /* fine regole generali per la pagina*/
@@ -118,7 +118,7 @@ header li {
   background-repeat: repeat-y;
   margin-top: 65px;
 }
-.jumbo_text:before {
+.jumbo_text:after {
   content: "";
   position: absolute;
   top: 0;
@@ -168,9 +168,8 @@ header li {
   font-weight: bold;
 }
 .deploy .segments div {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
-
 /* designed */
 .designed img {
   width: 100%;
@@ -241,21 +240,16 @@ footer .wrapper_80 .container-fluid a {
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .wrapper, .wrapper_80 {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   }
-  /* service */
-.service .container-fluid .regions {
-  text-align: center;
-}
-  /* service */
+
 
 @media screen and (max-width: 767px) {
-  .jumbo_tron {
-    background-size: 1250px;
-    background-repeat: repeat;
+  #logo_digitalocean {
+    transform: translateY(-25%);
   }
   .jumbo_text, .partner h4, .deploy_title {
     margin-bottom: 40px;
@@ -280,8 +274,14 @@ footer .wrapper_80 .container-fluid a {
     width: 70%;
   }
   .deploy_menu {
-    margin-left: 30px;
+    margin-left: 15px;
     margin-bottom: 40px;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* .deploy .segments #segment1, .deploy .segments #segment2, .deploy .segments #segment3, .deploy .segments #segment4 {
+    padding-right: 0px;
+    padding-left: 0px;
+  } */
 }
