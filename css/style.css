@@ -85,9 +85,10 @@
 .vertical_middle {
   vertical-align: middle;
 }
-#bottone {
-  transform: translateY(-25%);
+.min_width_80 {
+  min-width: 80px;
 }
+
 /* fine regole generali per la pagina*/
 /* header */
 /* header-top */
@@ -97,6 +98,9 @@
   left: 0;
   z-index: 3;
   width: 100%;
+}
+#bottone {
+  transform: translateY(-25%);
 }
 #logo_digitalocean {
   height: 30px;
@@ -205,7 +209,7 @@ header li {
 /* fine service */
 /* development */
 .development img {
-  width: 60%;
+  width: 80%;
 }
 /* fine development*/
 /* getstarted */
@@ -233,6 +237,10 @@ footer .wrapper_80 .container-fluid a {
   text-decoration: none;
   color: lightgrey;
 }
+footer img {
+  width: 30px;
+  height: 30px;
+}
 /* fine footer */
 
 
@@ -257,7 +265,7 @@ footer .wrapper_80 .container-fluid a {
   #vcs, .features img {
     margin-top: 40px;
   }
-  .partners div {
+  .partners div, footer .row div {
     margin-bottom: 15px;
   }
   .foto_designed {
@@ -271,13 +279,14 @@ footer .wrapper_80 .container-fluid a {
     text-align: left;
   }
   .development img, .designed img {
-    width: 70%;
+    width: 60%;
   }
   .deploy_menu {
     margin-left: 15px;
     margin-bottom: 40px;
   }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   /* .deploy .segments #segment1, .deploy .segments #segment2, .deploy .segments #segment3, .deploy .segments #segment4 {
